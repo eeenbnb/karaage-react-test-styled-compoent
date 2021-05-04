@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root{
+  --header-size: 50px;
+  --footer-size: 50px;
+  --inner-padding: 12px;
+}
+
+.app{
+  min-height: calc(100vh - var(--header-size) - var(--footer-size) - var(--inner-padding) * 2);
+  padding: var(--inner-padding);
+}
